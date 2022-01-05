@@ -1,0 +1,2 @@
+# Never hold onto any bash history
+.bash_history
