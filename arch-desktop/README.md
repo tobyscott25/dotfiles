@@ -94,12 +94,12 @@ bindsym $mod+Return exec alacritty
 
 14. Run `$ xrandr` to see available screen resolutions. Set it like this: (feel free to try a few different resolutions to find the best one for your screen, for me 2560x1440 is best.)
 ```
-$xrandr -s 2560x1440
+$ xrandr -s 2560x1440
 ```
 
-15. Now lets install a compositor for opacity control and other graphical features, an image viewer to draw the wallpaper, a GTK theme, an icon theme, and a program to select those themes.
+15. Now lets install an audio manager, a compositor for opacity control and other graphical features, an image viewer to draw the wallpaper, a GTK theme, an icon theme, and a program to select those themes.
 ```
-$ sudo pacman -S picom feh deepin-icon-theme lxappearance
+$ sudo pacman -S alsa-utils picom feh deepin-icon-theme lxappearance
 $ paru -S orchis-theme-git
 ```
 
@@ -111,10 +111,12 @@ $ paru -S orchis-theme-git
 17. Let's install some software.
 ```
 $ sudo pacman -S neofetch bashtop firefox ttf-droid github-cli alsa-utils numlockx flameshot
-$paru -S visual-studio-code-bin
+$ paru -S visual-studio-code-bin
 ```
 
-18. We're pretty much done, all that's left to do is copy across the config files now! Copy `.bash_profile`, `.bashrc` and `.xinitrc` to `~/`, and copy everything in the `.config` directory to `~/.config/`.
+18. We're pretty much done, all that's left to do is copy across the config files now! Copy `.asoundrc`, `.bash_profile`, `.bashrc` and `.xinitrc` to `~/`, and copy everything in the `.config` directory to `~/.config/`.
 - **Note: There will most likely be existing files in these places.** It is a good idea to back up the original config files just in case, but you should be fine to just **overwrite them unless you already have custom configs you don't want to lose**.
 
 19. Reboot your system and enjoy!
+
+- Note: If you don't have any sound you might have to run `$ alsamixer` and unmute some channels.
