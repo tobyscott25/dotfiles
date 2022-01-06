@@ -66,6 +66,9 @@ export SSH_AUTH_SOCK
 # Set screen resolution
 xrandr -s 2560x1440
 
+# Turn off numlock
+numlockx
+
 # Set wallpaper with 'feh'  !! This is done in the i3 config now so the wallpaper will refresh when i3 is reloaded
 # feh --bg-fill $HOME/wallpapers/lofi/umbrella.jpg
 
