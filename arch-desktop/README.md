@@ -7,7 +7,7 @@ This is my daily driver. This guide assumes a fresh installation of Arch Linux w
 
 ### 1. Install the dependancies
 ```
-$ sudo pacman -S vim git base-devel xorg xorg-xinit i3-gaps rofi alacritty nemo alsa-utils picom feh deepin-icon-theme lxappearance neofetch bashtop firefox ttf-droid github-cli alsa-utils numlockx flameshot
+$ sudo pacman -S vim git base-devel xorg xorg-xinit i3-gaps rofi alacritty nemo alsa-utils picom feh deepin-icon-theme lxappearance neofetch bashtop firefox ttf-droid github-cli alsa-utils numlockx flameshot zsh zsh-completions curl wget nodejs npm
 $ git clone https://aur.archlinux.org/paru.git
 $ cd paru
 $ makepkg -si
