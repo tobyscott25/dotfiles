@@ -13,8 +13,6 @@ if [ -f $sysresources ]; then
 
 
 
-
-
     xrdb -merge $sysresources
 
 fi
@@ -64,7 +62,12 @@ export SSH_AUTH_SOCK
 
 
 # Set screen resolution
-xrandr -s 2560x1440
+# xrandr -s 2560x1440
+
+# GDK_SCALE needs to be scaled up because the screen is so big
+# but then the text (GDK_DPISCALE) needs to be scaled down to counterract it
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
 
 # Turn off numlock
 numlockx
