@@ -11,3 +11,6 @@ alias l='ls -al'
 
 # PS1='[\u \W]\$ '
 PS1='\W $ '
+
+# Run neofetch on terminal startup
+neofetch
