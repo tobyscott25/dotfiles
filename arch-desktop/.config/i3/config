@@ -68,11 +68,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 
 # General settings
-font pango: Iosevka 12
+font pango: Iosevka Nerd Font 14
 floating_modifier $mod
 focus_follows_mouse no
-workspace_auto_back_and_forth yes
+# workspace_auto_back_and_forth yes
 
+# Lock the screen
+bindsym $mod+Shift+x            exec i3lock
 # Open a terminal emulator
 bindsym $mod+Return             exec alacritty
 # Open a file manager
@@ -151,46 +153,14 @@ mode "resize" {
         bindsym Escape          mode "default"
 }
 
-# i3bar config     !! No longer used. Replaced with Polybar.
-# bar {
-#         # strip_workspace_numbers yes
-#         # Contents of the i3bar
-#         # status_command          i3status
-#         status_command          i3blocks
-
-#         # Use spaces fgor invisible separators
-#         separator_symbol        "  "
-
-#         # Enable transperancy
-#         i3bar_command           i3bar --transparency
-
-#         position                top
-#         height                  26
-#         tray_padding            50
-#         colors {
-#                 statusline      "#eeeeee"
-#                 background      "#00000077"
-
-#                 #                       Border          Background      Text
-#                 focused_workspace       #00000077       #00000077       #FFFFFFFF
-#                 inactive_workspace      #00000077       #00000077       #FFFFFF55
-#                 urgent_workspace        #00000077       #00000077       #FF4444ff
-                
-#         }
-
-# }
-
-
-
-
 
 # i3-gaps fork only
 default_border none
 for_window [class="Alacritty"] border pixel 2
-gaps inner 10
+gaps inner 5
 gaps outer 0
 
-smart_gaps on
+# smart_gaps on
 smart_borders on
 
 # Window colours                Border          Background    Text            Indicator
@@ -204,6 +174,7 @@ client.urgent                   #ff0000aa       #ff0000aa     #ff0000aa       #f
 
 # Set wallpaper with 'feh'    !! Previously set in ~/.xinitrc
 exec_always feh --bg-fill $HOME/wallpapers/lofi/umbrella.jpg
+# exec_always feh --bg-fill $HOME/wallpapers/pastel/BF9284.jpg
 
 # Start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

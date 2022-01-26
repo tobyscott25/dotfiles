@@ -141,8 +141,8 @@ configuration {
       delay:  0;
   }
   filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
+      directories-first:  true;
+      sorting-method:     "name";
   }
 }
 @theme "themes/tobys-rofi.rasi"

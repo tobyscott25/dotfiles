@@ -1,20 +1,21 @@
 #!/bin/bash
 
 print_bytes() {
-    # if [ "$1" -lt 1000 ]; then
-    #     output="$1 KB"
-    # elif [ "$1" -lt 1000000 ]; then
-    #     output="$(echo "$1/1000" | bc -l | LANG=C xargs printf "%.f\n") KB"
-    # else
-    #     output="$(echo "$1/1000000" | bc -l | LANG=C xargs printf "%.1f\n") MB"
-    # fi
+    if [ "$1" -lt 1000 ]; then
+        output="$1 Bps"
+    elif [ "$1" -lt 1000000 ]; then
+        number=$(($1/1000))
+        output="$number KBps"
+    else
+        number=$(($1/1000000))
+        output="$number MBps"
+    fi
 
-    echo "$1 KB"
+    echo $output
 }
 
 INTERVAL=1
-# INTERFACES="enp0s25 wlp3s0"
-INTERFACES="enp4s0"
+INTERFACES="wlp5s0"
 
 declare -A bytes
 
@@ -44,15 +45,8 @@ while true; do
         bytes[past_tx_$interface]=${bytes[now_tx_$interface]}
 
 
-        # show_down=print_bytes $bytes_down
-        # show_up=print_bytes $bytes_up
-
-        # echo "DOWN: $bytes_down | UP: $bytes_up"
-        echo "DOWN: $(print_bytes $bytes_down) | UP: $(print_bytes $bytes_up)"
-    done
-
-    # echo "DOWN: $(print_bytes $down) | UP: $(print_bytes $up)"
-    
+        echo "  $(print_bytes $bytes_down)     $(print_bytes $bytes_up)"
+    done    
 
     sleep $INTERVAL
 done
