@@ -104,7 +104,8 @@ bindsym $mod+Shift+space        floating toggle
 # Switch focus between tiled windows and floating windows
 bindsym $mod+space              focus mode_toggle
 # Screenshot
-bindsym $mod+p                  exec flameshot gui
+bindsym $mod+p                  exec "screenshot"
+bindsym $mod+Shift+p            exec "screenshot window"
 
 # Shift focus
 bindsym $mod+Left               focus left
