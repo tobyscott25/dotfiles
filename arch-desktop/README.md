@@ -7,13 +7,13 @@ This is my daily driver. This guide assumes a fresh installation of Arch Linux w
 
 ### 1. Install the dependancies
 ```
-$ sudo pacman -S vim git base-devel xorg xorg-xinit i3-gaps rofi alacritty nemo alsa-utils picom feh deepin-icon-theme lxappearance neofetch bashtop firefox ttf-droid github-cli alsa-utils numlockx flameshot zsh zsh-completions curl wget nodejs npm
+$ sudo pacman -S vim git base-devel xorg xorg-xinit rofi alacritty nemo alsa-utils picom feh deepin-icon-theme lxappearance neofetch bashtop firefox ttf-droid github-cli alsa-utils numlockx flameshot zsh zsh-completions curl wget nodejs npm
 $ git clone https://aur.archlinux.org/paru.git
 $ cd paru
 $ makepkg -si
 $ cd ../
 $ rm -rf paru
-$ paru -S polybar orchis-theme-git visual-studio-code-bin google-chrome
+$ paru -S i3-gaps-rounded-git polybar orchis-theme-git visual-studio-code-bin google-chrome
 ```
 
 Install the drivers for your hardware. You may not need these at all, it's possible that your system will work out-of-the-box.

@@ -156,9 +156,14 @@ mode "resize" {
 
 # i3-gaps fork only
 default_border none
-for_window [class="Alacritty"] border pixel 2
+# for_window [class="Alacritty"] border pixel 2
 gaps inner 5
 gaps outer 0
+
+# i3-gaps-rounded fork only
+for_window [class=".*"] border pixel 0
+border_radius 8
+
 
 # smart_gaps on
 smart_borders on
