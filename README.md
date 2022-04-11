@@ -2,7 +2,8 @@
 
 
 ## Current configurations
-- [Arch Linux Desktop](/arch-desktop)
+- [Arch Linux Rice](/arch-rice)
+- [Kali Linux Rice](/kali-clean)
 - *Others will be listed here*
 
 
