@@ -3,7 +3,7 @@
 ## About
 If you do most of your work in a terminal (as is the case when using Kali), a tiling window manager like this is a no-brainer.
 
-![kali-clean](/screenshots/kali-clean.png)
+![kali-clean](screenshot.png)
 
 ## Installation
 
