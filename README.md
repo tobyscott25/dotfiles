@@ -3,7 +3,7 @@
 
 ## Current configurations
 - [Arch Linux Rice](/arch-rice)
-- [Kali Linux Rice](/kali-clean)
+- [Clean Kali Linux](/kali-clean)
 - *Others will be listed here*
 
 
