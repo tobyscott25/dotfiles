@@ -1,7 +1,7 @@
 # Clean Kali Linux
 
 ## About
-If you do most of your work in a terminal (as is the case when using Kali), a tiling window manager like this is a no-brainer.
+If you do most of your work in a terminal (as is the case when using Kali), a tiling window manager is a no-brainer for that.
 
 ![kali-clean](screenshot.png)
 
@@ -18,9 +18,14 @@ $ cd dotfiles/kali-clean
 $ ./install.sh
 ```
 
-## How to change the wallpaper
-
+## Authenticating GitHub CLI
+```sh
+$ gh auth login
 ```
+
+## Changing the wallpaper
+
+```sh
 $ vim .config/i3/config
 ```
 Find this line and edit the path to the new wallpaper you want
