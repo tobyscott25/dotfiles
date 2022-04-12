@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Update repositiories and upgrade packages
+sudo apt update && sudo apt upgrade -y
+
+# Install packages used
+sudo apt install -y i3-gaps neofetch feh picom rofi polybar ranger kitty
+
+# Install Iosevka Nerd Font
+mkdir -p ~/.local/share/fonts/
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip
+unzip Iosevka.zip -d ~/.local/share/fonts/
+rm -f Iosevka.zip
+fc-cache -fv
+
+# Add GitHub CLI to repo and install it
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install Bashtop
+git clone https://github.com/aristocratos/bashtop.git
+cd bashtop/DEB
+sudo ./build
+
+# Copy across config files
+cp -r homedir/.vimrc ~/.vimrc
+cp -r homedir/.zshrc ~/.zshrc
+cp -r ../../wallpapers ~/wallpapers
+mkdir -p ~/.config
+cp -r homedir/.config/i3 ~/.config/i3
+cp -r homedir/.config/kitty ~/.config/kitty
+cp -r homedir/.config/picom ~/.config/picom
+cp -r homedir/.config/polybar ~/.config/polybar
+# cp -r homedir/.config/rofi ~/.config/rofi
+cp -r homedir/.config/ranger ~/.config/ranger
+
+
+echo "Excellent! Now restart your machine and log into an i3 session."
