@@ -28,16 +28,17 @@ cd bashtop/DEB
 sudo ./build
 
 # Copy across config files
-cp -r homedir/.vimrc ~/.vimrc
-cp -r homedir/.zshrc ~/.zshrc
-cp -r ../../wallpapers ~/wallpapers
+cp -r ~/dotfiles/wallpapers ~/wallpapers
+cd ~/dotfiles/kali-clean/homedir
+cp .vimrc ~/.vimrc
+cp .zshrc ~/.zshrc
 mkdir -p ~/.config
-cp -r homedir/.config/i3 ~/.config/i3
-cp -r homedir/.config/kitty ~/.config/kitty
-cp -r homedir/.config/picom ~/.config/picom
-cp -r homedir/.config/polybar ~/.config/polybar
-# cp -r homedir/.config/rofi ~/.config/rofi
-cp -r homedir/.config/ranger ~/.config/ranger
+cp -r .config/i3 ~/.config/i3
+cp -r .config/kitty ~/.config/kitty
+cp -r .config/picom ~/.config/picom
+cp -r .config/polybar ~/.config/polybar
+# cp -r .config/rofi ~/.config/rofi
+cp -r .config/ranger ~/.config/ranger
 
 
 echo "Excellent! Now restart your machine and log into an i3 session."
