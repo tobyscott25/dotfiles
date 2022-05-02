@@ -21,6 +21,8 @@ sudo apt install gh
 
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Clone zsh-autosuggestions and add to Oh My Zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 
 # Install Bashtop
 git clone https://github.com/aristocratos/bashtop.git
