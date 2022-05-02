@@ -45,7 +45,7 @@ while true; do
         bytes[past_tx_$interface]=${bytes[now_tx_$interface]}
 
 
-        echo "  $(print_bytes $bytes_down)     $(print_bytes $bytes_up)"
+        echo "TRAFFIC [  $(print_bytes $bytes_down)   $(print_bytes $bytes_up) ]"
     done    
 
     sleep $INTERVAL
