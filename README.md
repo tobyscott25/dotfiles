@@ -86,7 +86,7 @@ $ sudo ./build
 ```
 
 
-### Install Zsh and two plugins (zsh-autosuggestions & zsh-syntax-highlighting)
+### Install Zsh (with Oh My Zsh, `zsh-autosuggestions` & `zsh-syntax-highlighting`)
 
 ```bash
 #!/bin/bash
