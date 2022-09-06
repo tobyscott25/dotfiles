@@ -1,7 +1,21 @@
-# Never hold onto any bash history
+# Don't keep shell history
 .bash_history
+.zsh_history
+.python_history
 
-# MacOS's annoying '.DS_Store' files
+# Can contain sensitive info (credentials/tokens/keys)
+.config/gh
+.ssh/
+.aws/
+
+# Just don't need in dotfiles repo
+.viminfo
+.vscode/
+.config/GIMP
+.config/spotify
+.config/VirtualBox
+
+# Don't keep MacOS's annoying '.DS_Store' files
 .DS_Store
 *.DS_Store
 **/.DS_Store

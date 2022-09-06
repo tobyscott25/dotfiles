@@ -1,3 +1,15 @@
+# Run the following commands on new shell
+neofetch -p
+# fortune | cowsay -pn
+
+echo "
+████████████████████████████████████████████████
+█▄─█▀▀▀█─▄█▄─▄▄─█▄─▄███─▄▄▄─█─▄▄─█▄─▀█▀─▄█▄─▄▄─█
+██─█─█─█─███─▄█▀██─██▀█─███▀█─██─██─█▄█─███─▄█▀█
+▀▀▄▄▄▀▄▄▄▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▄▄▀" | lolcat
+
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 

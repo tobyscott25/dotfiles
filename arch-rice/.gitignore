@@ -1,8 +1,0 @@
-# Can contain credentials/tokens
-.config/gh
-
-
-# Dont need in dotfiles repo
-.config/GIMP
-.config/spotify
-.config/VirtualBox
