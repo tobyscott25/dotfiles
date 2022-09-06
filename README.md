@@ -2,9 +2,9 @@
 
 ![kali-i3](screenshots/kali-i3-gaps.png)
 
-# Installation
+## Installation
 
-## Clone this repo
+### Clone this repo
 
 ```bash
 #!/bin/bash
@@ -16,7 +16,7 @@ $ sudo pacman -S git
 $ git clone https://github.com/tobyscott25/dotfiles.git
 ```
 
-## Install Homebrew (MacOS-specific instructions)
+### Install Homebrew (MacOS-specific instructions)
 
 ```bash
 #!/bin/bash
@@ -24,7 +24,7 @@ $ git clone https://github.com/tobyscott25/dotfiles.git
 $ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 ```
 
-## Install AUR helper (Arch-specific instructions)
+### Install AUR helper (Arch-specific instructions)
 
 ```bash
 #!/bin/bash
@@ -36,7 +36,7 @@ $ cd ../
 $ rm -rf paru
 ```
 
-## Install the drivers for your hardware (Arch-specific instructions)
+### Install the drivers for your hardware (Arch-specific instructions)
 You may not need these at all, it's possible that your system will work out-of-the-box.
 ```bash
 #!/bin/bash
@@ -47,7 +47,7 @@ $ sudo pacman -S xf86-video-intel mesa    # Intel
 $ sudo pacman -S virtualbox-guest-utils	  # VirtualBox
 ```
 
-## Install Iosevka Nerd Font
+### Install Iosevka Nerd Font
 
 ```bash
 #!/bin/bash
@@ -60,7 +60,7 @@ $ fc-cache -fv
 ```
 
 
-## Install GitHub CLI (Debian-specific instructions)
+### Install GitHub CLI (Debian-specific instructions)
 
 ```bash
 #!/bin/bash
@@ -74,7 +74,7 @@ $ sudo apt update
 $ sudo apt install gh
 ```
 
-## Install Bashtop (Debian-specific instructions)
+### Install Bashtop (Debian-specific instructions)
 
 ```bash
 #!/bin/bash
@@ -86,7 +86,7 @@ $ sudo ./build
 ```
 
 
-## Install Zsh and two plugins (zsh-autosuggestions & zsh-syntax-highlighting)
+### Install Zsh and two plugins (zsh-autosuggestions & zsh-syntax-highlighting)
 
 ```bash
 #!/bin/bash
@@ -102,9 +102,9 @@ Find this line in `.zshrc` and add the two new plugins after git like so:
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
-# Usage
+## Usage
 
-## Changing the wallpaper in i3
+### Changing the wallpaper in i3
 
 Find this line in `.config/i3/config` and edit the path to the new wallpaper you want
 ```conf
