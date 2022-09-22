@@ -97,9 +97,15 @@ $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plu
 $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
 
-Find this line in `.zshrc` and add the two new plugins after git like so:
+Edit `.zshrc`
+1. Find this line and add the two new plugins after git like so:
 ```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```
+
+2. Change `ZSH_THEME` from `bobbyrussel` to `af-magic`:
+```
+ZSH_THEME="af-magic"
 ```
 
 ## Usage
