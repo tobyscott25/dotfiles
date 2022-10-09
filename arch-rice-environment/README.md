@@ -11,7 +11,3 @@ $ sudo pacman -S vim git base-devel xorg xorg-xinit rofi alacritty nemo alsa-uti
 
 $ paru -S i3-gaps-rounded-git polybar orchis-theme-git visual-studio-code-bin google-chrome
 ```
-
-
-
-testing commit signing!
