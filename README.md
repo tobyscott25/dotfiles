@@ -85,7 +85,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search $ZSH_CUSTOM/
 Edit `.zshrc`
 1. Find this line and add the plugins, some are installed by default:
 ```
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting history-substring-search history dotenv aliases brew colored-man-pages docker)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting history-substring-search history dotenv aliases sudo themes brew colored-man-pages docker nmap)
 ```
 
 2. Change `ZSH_THEME` from `bobbyrussel` to `af-magic`:
