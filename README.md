@@ -72,7 +72,7 @@ sudo ./build
 ```
 
 
-### Install Zsh (with Oh My Zsh & OMZ Plugins)
+### Install Zsh (with OhMyZsh + Plugins)
 
 ```bash
 sudo pacman -S zsh
@@ -85,7 +85,7 @@ git clone https://github.com/zsh-users/zsh-history-substring-search $ZSH_CUSTOM/
 Edit `.zshrc`
 1. Find this line and add the plugins, some are installed by default:
 ```
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting history-substring-search history dotenv aliases sudo themes brew colored-man-pages docker nmap)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting history-substring-search history dotenv aliases sudo themes brew colored-man-pages docker nmap kubectl)
 ```
 
 2. Change `ZSH_THEME` from `bobbyrussel` to `af-magic`:
