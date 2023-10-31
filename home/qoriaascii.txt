@@ -1,0 +1,17 @@
+\033[34m                                   
+          oqQqQQQQQQQqqQq          
+       oqQQQQQQQQQQQQQQQQQqo       
+     qQQQQQQQQqq    qqQqQQQ        
+    qQQQQQQo           oo \033[32m  ooo    
+\033[34m  oQQQQQQ                \033[32m  qqqqqo  
+\033[34m  qQQQQQ                 \033[32m   qqqqq  
+\033[34m oQQQQq                  \033[32m   oqqqqo 
+\033[34m QQQQQQ                  \033[32m    qqqqo 
+\033[34m qQQQQQ            \033[33m  qo  \033[32m    qqqqo 
+\033[34m oQQQQQ          \033[33m  qQQQQq\033[32m    oqqqo 
+\033[34m  qQQQQq          \033[33m oQQQQQQq  \033[32m  oo  
+\033[34m   qQQQqo          \033[33m  oQQQQQQq      
+\033[34m    QQo \033[31m oQqo       \033[33m   oQQQQQQq    
+\033[31m        qQQQQQqqQQQQqQ   \033[33moQQQQQQq  
+\033[31m        qQQQQQQQQQQQQQQQ  \033[33m oQQQQQo 
+\033[31m           oqqQQQQQQQqqo    \033[33m oqo   
