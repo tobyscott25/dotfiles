@@ -1,4 +1,6 @@
 set number
+set numberwidth=4
+set ruler
 
 " Syntax highlighting, vim will try to load example: syntax/cpp.vim
 syntax on

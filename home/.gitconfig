@@ -6,6 +6,8 @@
 [user]
 	name = Toby Scott
 	email = hi@tobyscott.dev
+[core]
+	excludesfile = $HOME/.gitignore_global
 [init]
 	defaultBranch = main
 [core]
