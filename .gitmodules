@@ -1,0 +1,12 @@
+[submodule "submodules/konsole"]
+	path = submodules/catppuccin/konsole
+	url = https://github.com/catppuccin/konsole
+[submodule "submodules/kde"]
+	path = submodules/catppuccin/kde
+	url = https://github.com/catppuccin/kde
+[submodule "submodules/catppuccin/hyprland"]
+	path = submodules/catppuccin/hyprland
+	url = git@github.com:catppuccin/hyprland
+[submodule "submodules/catppuccin/kitty"]
+	path = submodules/catppuccin/kitty
+	url = https://github.com/catppuccin/kitty
